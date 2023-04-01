@@ -8,6 +8,7 @@ This project implements the stack, queue, and linked list data structures in the
 Ensure that all files are in the same folder. Enter the file the project is in.  From there, compile it by using gcc (filename) (filename) -o (test file name.exe).  Run the program by using ./(test file name.exe). 
 
 # Dependencies
+- math.h
 - stdbool.h
 - stdio.h
 - stdlib.h
