@@ -19,7 +19,7 @@ STACK* createStack(int size)
     }
 
     stack->size  = size;
-    stack->count = 0;
+    stack->top = 0;
 
     return stack;
 }
@@ -28,21 +28,16 @@ bool isFull(STACK* stack)
 /* Checks whether the stack is full */
 
 {
-    stack->count == stack->size;
-    return; 
+    return stack->top == stack->size - 1;
 }
 
 bool isEmpty (STACK* stack)
 /* Checks whether the stack is empty */
 {
-    if (stack->count == 0)
-    {
-        return true;
-    }
-    return false;
+    return stack->top == 0;
 }
 
-int push(STACK* stack, int item) 
+void push(STACK* stack, int item) 
 /* Adds an element to the top of the stack */
 {
     if (isFull(stack))
@@ -61,11 +56,11 @@ int push(STACK* stack, int item)
     newNode->data = item;
     newNode->next = stack->data;
     stack->data = newNode;
-    stack->count++;
+    stack->top++;
     return EXIT_SUCCESS;
 }
 
-int pop(STACK* stack, int item)
+int pop(STACK* stack)
 /* Removes the topmost element of the stack */
 {
     if (isEmpty(stack))
@@ -78,6 +73,6 @@ int pop(STACK* stack, int item)
     int item = nodefree->data;
     stack->data = nodefree->next;
     free(nodefree);
-    stack->count--;
+    stack->top--;
     return item; 
 }
