@@ -11,6 +11,7 @@ Ensure that all files are in the same folder. Enter the file the project is in. 
 - stdbool.h
 - stdio.h
 - stdlib.h
+- project1.h
 
 # Stack
 The Stack is a Last In First Out (LIFO) data structure that uses the Push and Pop operations to add and remove data. It is implemented on top of arrays and linked lists.
