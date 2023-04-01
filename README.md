@@ -19,20 +19,20 @@ The Stack is a Last In First Out (LIFO) data structure that uses the Push and Po
 
 - struct stack
 - struct STACK* createStack
-- bool isFull(STACK* stack);
-- bool isEmpty (STACK* stack);
-- int push(STACK* stack, int item);
-- int pop(STACK* stack, int item);
+- bool isFull(STACK* stack)
+- bool isEmpty (STACK* stack)
+- int push(STACK* stack, int item)
+- int pop(STACK* stack, int item)
 
 # Queue
 The Queue operates in a First In First Out (FIFO) order and uses Enqueue and Dequeue operations to add and remove data.
 
 - typedef struct node
 - typedef struct queue
-- void enqueue(QUEUE* queue, void* temp);
-- void* dequeue(QUEUE* q);
-- bool isEmpty(QUEUE* q);
-- void dumpQueue(QUEUE* q);
+- void enqueue(QUEUE* queue, void* temp)
+- void* dequeue(QUEUE* q)
+- bool isEmpty(QUEUE* q)
+- void dumpQueue(QUEUE* q)
 
 
 # Linked List
@@ -43,15 +43,15 @@ Our Linked List Library implements a doubly-linked list that tracks pointers for
 - typedef struct node
 - typedef struct LLIST
 - LLIST* CreateList()
-- void* Add(LLIST* list, void* data, int size, bool cleanup);
-- NODE* WalkToIndex(LLIST* list, int index);
-- int IndexOf(LLIST* list, void* data, int startAtIndex);
-- bool Contains(LLIST* list, void* data);
-- void InsertBefore(LLIST* list, void* data, void* dataTarget, int size, bool cleanup);
-- void InsertAfter(LLIST* list, void* data, void* dataTarget, int size, bool cleanup);
-- void Insert(LLIST* list, void* data, int index, int size, bool cleanup);
-- void RemoveNode(LLIST* list, void* data);
-- void RemoveAt(LLIST* list, int index);
-- void Clear(LLIST* list);
-- void printList(LLIST* list);
-- void SortList(LLIST* list);
+- void* Add(LLIST* list, void* data, int size, bool cleanup)
+- NODE* WalkToIndex(LLIST* list, int index)
+- int IndexOf(LLIST* list, void* data, int startAtIndex)
+- bool Contains(LLIST* list, void* data)
+- void InsertBefore(LLIST* list, void* data, void* dataTarget, int size, bool cleanup)
+- void InsertAfter(LLIST* list, void* data, void* dataTarget, int size, bool cleanup)
+- void Insert(LLIST* list, void* data, int index, int size, bool cleanup)
+- void RemoveNode(LLIST* list, void* data)
+- void RemoveAt(LLIST* list, int index)
+- void Clear(LLIST* list)
+- void printList(LLIST* list)
+- void SortList(LLIST* list)
