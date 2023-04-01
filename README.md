@@ -17,12 +17,12 @@ Ensure that all files are in the same folder. Enter the file the project is in. 
 # Stack
 The Stack is a Last In First Out (LIFO) data structure that uses the Push and Pop operations to add and remove data. It is implemented on top of arrays and linked lists.
 
-- struct Stack
-- struct Stack* createStack
-- int isFull
-- int isEmpty
-- void push
-- int pop
+- struct stack
+- struct STACK* createStack
+- bool isFull(STACK* stack);
+- bool isEmpty (STACK* stack);
+- int push(STACK* stack, int item);
+- int pop(STACK* stack, int item);
 
 # Queue
 The Queue operates in a First In First Out (FIFO) order and uses Enqueue and Dequeue operations to add and remove data.
